@@ -10,7 +10,7 @@ function contact(event) {
         'service_g299aps',
         'template_haz1yqy',
         event.target,
-        '223vKUl-YVgFniSA5'
+        'WLKJVSDe3H9sIU_eP'
     ).then(() => {
 loading.classList.remove(" modal__overlay--visible");
 success.classList += " modal__overlay--visible";
@@ -21,8 +21,15 @@ success.classList += " modal__overlay--visible";
         );
     })
 
-    
-    
-   
+    }
 
-}
+let isModalOpen = false;
+    function toggleModal() {
+       
+        if (isModalOpen) {
+             isModalOpen = false;
+            return document.body.classList.remove("modal--open");
+        }
+          isModalOpen = true;
+        document.body.classList += " modal--open";
+    }

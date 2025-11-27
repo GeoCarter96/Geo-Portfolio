@@ -11,11 +11,11 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
+   (function() {
       emailjs.init({
-        publicKey: "223vKUl-YVgFniSA5",
-      });
-   })();
+        publicKey: "WLKJVSDe3H9sIU_eP" , });
+      })();
+   
 </script>
 </head>
 <body>
@@ -37,7 +37,7 @@ nav__link--anchor
 link__hover-effect
 link__hover-effect--black">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
 <a href="#" class="
 nav__link--anchor
 link__hover-effect
@@ -59,7 +59,7 @@ link__hover-effect--black"><i class="fa-sharp fa-solid fa-circle-half-stroke"></
     <h1 class="title blue">I'm Geoffrey</h1>
     <p class="header__para">
 I'm A <span class="blue" >Frontend Software Engineer</span> with a strong passion for web applications with great user experience. <br>
-Here's a bit more <b class="blue">about me</b>.
+Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
     </p>
     <div class="social__list">
         
@@ -75,7 +75,7 @@ Here's a bit more <b class="blue">about me</b>.
     </div>
 </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
       <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -107,6 +107,7 @@ Here's a bit more <b class="blue">about me</b>.
             </div>
         </div>
           <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
                 Let's Have A Chat!
             </h3>
@@ -137,7 +138,7 @@ Here's a bit more <b class="blue">about me</b>.
                 Thanks For The Message! Looking Forward To Speaking To You Soon!😁
             </div>
           </div>
-          <i class="fas fa-times modal__exit click"></i>
+          
     </div>
     </section>
     <section id="projects">
