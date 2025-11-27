@@ -383,6 +383,7 @@ transform: scale(1);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading{
@@ -390,7 +391,7 @@ transform: scale(1);
     
     
     font-size: 80px;
-    z-index: -1;
+    
 }
 
 .modal__overlay--success {
@@ -399,6 +400,11 @@ transform: scale(1);
     font-weight: 700;
     text-align: center;
     padding: 28px;
+    
+}
+
+.modal__overlay--visible {
+    z-index: 1;
 }
 
 
