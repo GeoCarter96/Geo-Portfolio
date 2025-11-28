@@ -25,14 +25,14 @@
                 <img id="personal-logo" src="./assets/g.logo.png" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link click" onclick="toggleContrast()">
+                <li class="nav__link " onclick="toggleModal()">
 <a href="#" class="
 nav__link--anchor
 link__hover-effect
 link__hover-effect--black">About</a>
                 </li>
                 <li class="nav__link">
-<a href="#" class="
+<a href="#projects" class="
 nav__link--anchor
 link__hover-effect
 link__hover-effect--black">Projects</a>
@@ -75,9 +75,11 @@ Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
     </div>
 </div>
         </header>
+        <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
       <i class="fa-solid fa-envelope"></i>
         </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -256,11 +258,14 @@ Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
     <a href="https://github.com/GeoCarter96" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
 GitHub 
     </a>
-      <a href="#"  class="footer__social--link link__hover-effect link__hover-effect--white">
+      <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
 Email 
     </a>
       <a href="#" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white" >
 Resume
+    </a>
+     <a href="#" onclick="toggleModal()"  class="footer__social--link link__hover-effect link__hover-effect--white" >
+Contact
     </a>
    </div>
    <div class="footer__copyright">Copyright &copy; 2025 Geoffrey Carter</div>
